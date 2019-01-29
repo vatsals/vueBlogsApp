@@ -59,7 +59,6 @@ export default {
         post: function(){
             this.$http.post('https://vuejs-1f6e8.firebaseio.com/posts.json', this.blog)
                 .then(function(data){
-                    console.log(data);
                     this.submitted = true;
                 });
         }
